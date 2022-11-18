@@ -22,133 +22,138 @@
          {
             "Project": "Gabapentin",
             "Simulation": "Blum Healthy 400 mg PO",
-            "SectionReference": "Gabapentin_Healthy"
+            "SectionReference": "gabapentin_healthy"
          },
          {
             "Project": "Gabapentin",
             "Simulation": "Blum CKD3 400 mg PO",
-            "SectionReference": "Gabapentin_CKD"
+            "SectionReference": "gabapentin_ckd"
          },
          {
             "Project": "Gabapentin",
             "Simulation": "Blum CKD5 400 mg PO",
-            "SectionReference": "Gabapentin_CKD"
+            "SectionReference": "gabapentin_ckd"
          },
          {
             "Project": "Acebutolol",
             "Simulation": "Roux Healthy 200 mg PO",
-            "SectionReference": "Acebutolol_Healthy"
+            "SectionReference": "acebutolol_healthy"
          },
          {
             "Project": "Acebutolol",
             "Simulation": "Roux CKD 200 mg PO",
-            "SectionReference": "Acebutolol_CKD"
+            "SectionReference": "acebutolol_ckd"
          },
          {
             "Project": "Atenolol",
             "Simulation": "Kirch Healthy 100 mg PO",
-            "SectionReference": "Atenolol_Healthy"
+            "SectionReference": "atenolol_healthy"
          },
          {
             "Project": "Atenolol",
             "Simulation": "Kirch CKD3 100 mg PO",
-            "SectionReference": "Atenolol_CKD"
+            "SectionReference": "atenolol_ckd"
          },
          {
             "Project": "Atenolol",
             "Simulation": "Kirch CKD4 100 mg PO",
-            "SectionReference": "Atenolol_CKD"
+            "SectionReference": "atenolol_ckd"
          },
          {
             "Project": "Atenolol",
             "Simulation": "Kirch CKD5 100 mg PO",
-            "SectionReference": "Atenolol_CKD"
+            "SectionReference": "atenolol_ckd"
          },
          {
             "Project": "Atenolol",
             "Simulation": "Sassard Healthy 100 mg PO",
-            "SectionReference": "Atenolol_Healthy"
+            "SectionReference": "atenolol_healthy"
          },
          {
             "Project": "Atenolol",
             "Simulation": "Sassard CKD3 100 mg PO",
-            "SectionReference": "Atenolol_CKD"
+            "SectionReference": "atenolol_ckd"
          },
          {
             "Project": "Atenolol",
             "Simulation": "Sassard CKD4 100 mg PO",
-            "SectionReference": "Atenolol_CKD"
+            "SectionReference": "atenolol_ckd"
          },
          {
             "Project": "Atenolol",
             "Simulation": "Wan Healthy 50mg PO",
-            "SectionReference": "Atenolol_Healthy"
+            "SectionReference": "atenolol_healthy"
          },
          {
             "Project": "Atenolol",
             "Simulation": "Wan CKD4 50 mg PO",
-            "SectionReference": "Atenolol_CKD"
+            "SectionReference": "atenolol_ckd"
          }
       ]
    },
    "Inputs": [],
    "Sections": [
       {
-         "Title": "Introduction",
+         "Title": "introduction",
+         "Reference": "Introduction",
          "Content": "Content/Section1_Introduction.md"
       },
       {
+         "Reference": "ckd_population_development",
          "Title": "CKD Population Development",
          "Content": "Content/Section2_Model.md"
       },
       {
+         "Reference": "compounds",
          "Title": "Compounds",
          "Content": "Content/Section3_Results_and_Discussion.md",
          "Sections": [
             {
+               "Reference": "gabapentin",
                "Title": "Gabapentin",
                "Content": "Content/Gabapentin_Introduction.md",
                "Sections": [
                   {
-                     "Reference": "Gabapentin_Healthy",
+                     "Reference": "gabapentin_healthy",
                      "Title": "Gabapentin in a Healthy Population",
                      "Content": "Content/Gabapentin_healthy.md"
                   },
                   {
-                     "Reference": "Gabapentin_CKD",
+                     "Reference": "gabapentin_ckd",
                      "Title": "Gabapentin in a CKD Population",
                      "Content": "Content/Gabapentin_CKD.md"
                   }
                ]
             },
             {
+               "Reference": "acebutolol",
                "Title": "Acebutolol",
                "Content": "Content/Acebutolol_Introduction.md",
                "Sections": [
                   {
-                     "Reference": "Acebutolol_Healthy",
+                     "Reference": "acebutolol_healthy",
                      "Title": "Acebutolol in a Healthy Population",
                      "Content": "Content/Acebutolol_healthy.md"
-                     
                   },
                   {
-                     "Reference": "Acebutolol_CKD",
+                     "Reference": "acebutolol_ckd",
                      "Title": "Acebutolol in a CKD Population",
                      "Content": "Content/Acebutolol_CKD.md"
                   }
                ]
             },
             {
+               "Reference": "atenolol",
                "Title": "Atenolol",
                "Content": "Content/Atenolol_Introduction.md",
                "Sections": [
                   {
-                     "Reference": "Atenolol_Healthy",
+                     "Reference": "atenolol_healthy",
                      "Title": "Atenolol in a Healthy Population",
                      "Content": "Content/Atenolol_healthy.md"
                   },
                   {
-                     "Reference": "Atenolol_CKD",
+                     "Reference": "atenolol_ckd",
                      "Title": "Atenolol in a CKD Population",
                      "Content": "Content/Atenolol_CKD.md"
                   }
@@ -157,12 +162,19 @@
          ]
       },
       {
+         "Reference": "conclusion",
          "Title": "Conclusion",
          "Content": "Content/Section4_Conclusion.md"
       },
       {
+         "Reference": "references",
          "Title": "References",
          "Content": "Content/References.md"
+      }
+   ],
+   "Intro": [
+      {
+         "Path": "Content/titlepage.md"
       }
    ]
 }

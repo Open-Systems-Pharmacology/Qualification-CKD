@@ -1,30 +1,49 @@
 
 
+
+
+# Qualification of CKD Populations
+
+
+
+| Version                                         | 1.0-OSP11.0                                                   |
+| ----------------------------------------------- | ------------------------------------------------------------ |
+| OSP Version                                     | 11.0                                                          |
+| Qualification Framework Version                 | 2.0                                                          |
+
+
+
+This qualification report and the corresponding PK-Sim project file are filed at:
+
+https://github.com/Open-Systems-Pharmacology/Qualification-CKD
+
+
+
 # Table of Contents
 
- * [1 Introduction](#undefined-section-1)
- * [2 CKD Population Development](#undefined-section-2)
- * [3 Compounds](#undefined-section-3)
-   * [3.1 Gabapentin](#undefined-section-4)
-     * [3.1.1 Gabapentin in a Healthy Population](#Gabapentin_Healthy)
-     * [3.1.2 Gabapentin in a CKD Population](#Gabapentin_CKD)
-   * [3.2 Acebutolol](#undefined-section-7)
-     * [3.2.1 Acebutolol in a Healthy Population](#Acebutolol_Healthy)
-     * [3.2.2 Acebutolol in a CKD Population](#Acebutolol_CKD)
-   * [3.3 Atenolol](#undefined-section-10)
-     * [3.3.1 Atenolol in a Healthy Population](#Atenolol_Healthy)
-     * [3.3.2 Atenolol in a CKD Population](#Atenolol_CKD)
- * [4 Conclusion](#undefined-section-13)
- * [5 References](#undefined-section-14)
+ * [1 introduction](#Introduction)
+ * [2 CKD Population Development](#ckd_population_development)
+ * [3 Compounds](#compounds)
+   * [3.1 Gabapentin](#gabapentin)
+     * [3.1.1 Gabapentin in a Healthy Population](#gabapentin_healthy)
+     * [3.1.2 Gabapentin in a CKD Population](#gabapentin_ckd)
+   * [3.2 Acebutolol](#acebutolol)
+     * [3.2.1 Acebutolol in a Healthy Population](#acebutolol_healthy)
+     * [3.2.2 Acebutolol in a CKD Population](#acebutolol_ckd)
+   * [3.3 Atenolol](#atenolol)
+     * [3.3.1 Atenolol in a Healthy Population](#atenolol_healthy)
+     * [3.3.2 Atenolol in a CKD Population](#atenolol_ckd)
+ * [4 Conclusion](#conclusion)
+ * [5 References](#references)
 
 
 
 
 
-<a id="undefined-section-1"></a>
+<a id="Introduction"></a>
 
 
-# 1 Introduction
+# 1 introduction
 
 
 The presented qualification report performs simulations of drug disposition and pharmacokinetics in subjects with chronic kidney disease (CKD) to qualify the parameterization of the foundational anatomy and physiology parameters for virtual populations with CKD in the Open Systems Pharmacology (OSP) Suite.
@@ -39,7 +58,7 @@ This report replicates in part the evaluation of the parameterization done by Ma
 
 
 
-<a id="undefined-section-2"></a>
+<a id="ckd_population_development"></a>
 
 
 # 2 CKD Population Development
@@ -82,13 +101,13 @@ In order to generate a virtual population of subjects with CKD, the user must sp
 
 
 
-<a id="undefined-section-3"></a>
+<a id="compounds"></a>
 
 
 # 3 Compounds
 
 
-The method to generate virtual populatoins with CKD was qualified by testing its predictive performance when used in combination with PBPK models for healthy subjects in order to predict the pharmacokinetics of drugs in patients with CKD from literature.
+The method to generate virtual populations with CKD was qualified by testing its predictive performance when used in combination with PBPK models for healthy subjects in order to predict the pharmacokinetics of drugs in patients with CKD from literature.
 
 The method was evaluated using three compounds and first considers subjects with CKD (Stage 3 to Stage 5, end-stage renal disease) who are not on dialysis. The three compounds evaluated for the first qualification are gabapentin, acebutolol, and atenolol. This evaluation replicates in part the work published by Malik et al., 2020. The objective is to determine success of the population generation method by comparing the predicted pharmacokinetics in CKD to clinical pharmacokinetic data from literature. 
 
@@ -98,7 +117,7 @@ Each subsection that follows will contain an introduction to the test compound, 
 
 
 
-<a id="undefined-section-4"></a>
+<a id="gabapentin"></a>
 
 
 ## 3.1 Gabapentin
@@ -114,7 +133,7 @@ Gabapentin is not metabolized and completely renally cleared as unchanged drug b
 
 
 
-<a id="Gabapentin_Healthy"></a>
+<a id="gabapentin_healthy"></a>
 
 
 ### 3.1.1 Gabapentin in a Healthy Population
@@ -172,7 +191,7 @@ LAT1 was added as an influx transporter and its relative expression throughout t
 **Figure 3-1** demonstrates the simulated oral model PK profiles in a healthy population compared against observed Blum 1994 study data.<sup>34</sup>
 
 
-![](images/003_section_undefined-section-3/004_section_undefined-section-4/005_section_Gabapentin_Healthy/1_time_profile_plot_Gabapentin_Blum_Healthy_400_mg_PO.png)
+![](images/003_section_compounds/004_section_gabapentin/005_section_gabapentin_healthy/1_time_profile_plot_Gabapentin_Blum_Healthy_400_mg_PO.png)
 
 
 
@@ -188,7 +207,7 @@ LAT1 was added as an influx transporter and its relative expression throughout t
 
 
 
-<a id="Gabapentin_CKD"></a>
+<a id="gabapentin_ckd"></a>
 
 
 ### 3.1.2 Gabapentin in a CKD Population
@@ -201,7 +220,7 @@ A population with Stage 3 CKD was created according to the demographic parameter
 A population with Stage 4-5 CKD was created according to the demographic parameters of the target population presented in the study of Blum 1994<sup>34</sup> (eGFR 1-30 mL/min/1.73m<sup>2</sup>). Simulation of the pharmacokinetics of gabapentin after a single oral dose of 400 mg in this target population is presented in **Figure 3-3**
 
 
-![](images/003_section_undefined-section-3/004_section_undefined-section-4/006_section_Gabapentin_CKD/2_time_profile_plot_Gabapentin_Blum_CKD3_400_mg_PO.png)
+![](images/003_section_compounds/004_section_gabapentin/006_section_gabapentin_ckd/2_time_profile_plot_Gabapentin_Blum_CKD3_400_mg_PO.png)
 
 
 
@@ -214,7 +233,7 @@ A population with Stage 4-5 CKD was created according to the demographic paramet
 <br>
 
 
-![](images/003_section_undefined-section-3/004_section_undefined-section-4/006_section_Gabapentin_CKD/3_time_profile_plot_Gabapentin_Blum_CKD5_400_mg_PO.png)
+![](images/003_section_compounds/004_section_gabapentin/006_section_gabapentin_ckd/3_time_profile_plot_Gabapentin_Blum_CKD5_400_mg_PO.png)
 
 
 
@@ -230,7 +249,7 @@ A population with Stage 4-5 CKD was created according to the demographic paramet
 
 
 
-<a id="undefined-section-7"></a>
+<a id="acebutolol"></a>
 
 
 ## 3.2 Acebutolol
@@ -244,7 +263,7 @@ Acebutolol undergoes extensive first pass metabolism in the liver by the two enz
 
 
 
-<a id="Acebutolol_Healthy"></a>
+<a id="acebutolol_healthy"></a>
 
 
 ### 3.2.1 Acebutolol in a Healthy Population
@@ -309,7 +328,7 @@ The estimated fraction excreted to urine of 12% approximated the observed value 
 **Figure 3-4** shows the simulated oral model PK profiles in a healthy population compared against observed Roux 1980 study data.<sup>37</sup>
 
 
-![](images/003_section_undefined-section-3/007_section_undefined-section-7/008_section_Acebutolol_Healthy/4_time_profile_plot_Acebutolol_Roux_Healthy_200_mg_PO.png)
+![](images/003_section_compounds/007_section_acebutolol/008_section_acebutolol_healthy/4_time_profile_plot_Acebutolol_Roux_Healthy_200_mg_PO.png)
 
 
 
@@ -325,7 +344,7 @@ The estimated fraction excreted to urine of 12% approximated the observed value 
 
 
 
-<a id="Acebutolol_CKD"></a>
+<a id="acebutolol_ckd"></a>
 
 
 ### 3.2.2 Acebutolol in a CKD Population
@@ -336,7 +355,7 @@ With the drug-specific parameters fixed, the healthy PBPK model was translated t
 A population with Stage 3-5 CKD was created according to the demographic parameters of the target population presented in the study of Roux 1980 (eGFR 6-56 mL/min/1.73m<sup>2</sup>). Simulation of the pharmacokinetics of acebutolol after a single oral dose of 200 mg in this target population is presented in **Figure 3-5**
 
 
-![](images/003_section_undefined-section-3/007_section_undefined-section-7/009_section_Acebutolol_CKD/5_time_profile_plot_Acebutolol_Roux_CKD_200_mg_PO.png)
+![](images/003_section_compounds/007_section_acebutolol/009_section_acebutolol_ckd/5_time_profile_plot_Acebutolol_Roux_CKD_200_mg_PO.png)
 
 
 
@@ -352,7 +371,7 @@ A population with Stage 3-5 CKD was created according to the demographic paramet
 
 
 
-<a id="undefined-section-10"></a>
+<a id="atenolol"></a>
 
 
 ## 3.3 Atenolol
@@ -368,7 +387,7 @@ Atenolol is a substrate of the organic cation transporter 2 (OCT2/SLC22A2) on th
 
 
 
-<a id="Atenolol_Healthy"></a>
+<a id="atenolol_healthy"></a>
 
 
 ### 3.3.1 Atenolol in a Healthy Population
@@ -464,7 +483,7 @@ Atenolol is predominantly absorbed in the ileum.<sup>57-60</sup> The transporter
 **Figures 3-6, 3-7, and 3-8** demonstrate the simulated oral model PK profiles in a population compared against observed data from Wan 1979, Kirch 1981, and Sassard 1977, respectively.<sup>53,55,65</sup>.
 
 
-![](images/003_section_undefined-section-3/010_section_undefined-section-10/011_section_Atenolol_Healthy/6_time_profile_plot_Atenolol_Kirch_Healthy_100_mg_PO.png)
+![](images/003_section_compounds/010_section_atenolol/011_section_atenolol_healthy/6_time_profile_plot_Atenolol_Kirch_Healthy_100_mg_PO.png)
 
 
 
@@ -477,7 +496,7 @@ Atenolol is predominantly absorbed in the ileum.<sup>57-60</sup> The transporter
 <br>
 
 
-![](images/003_section_undefined-section-3/010_section_undefined-section-10/011_section_Atenolol_Healthy/10_time_profile_plot_Atenolol_Sassard_Healthy_100_mg_PO.png)
+![](images/003_section_compounds/010_section_atenolol/011_section_atenolol_healthy/10_time_profile_plot_Atenolol_Sassard_Healthy_100_mg_PO.png)
 
 
 
@@ -490,7 +509,7 @@ Atenolol is predominantly absorbed in the ileum.<sup>57-60</sup> The transporter
 <br>
 
 
-![](images/003_section_undefined-section-3/010_section_undefined-section-10/011_section_Atenolol_Healthy/13_time_profile_plot_Atenolol_Wan_Healthy_50mg_PO.png)
+![](images/003_section_compounds/010_section_atenolol/011_section_atenolol_healthy/13_time_profile_plot_Atenolol_Wan_Healthy_50mg_PO.png)
 
 
 
@@ -506,7 +525,7 @@ Atenolol is predominantly absorbed in the ileum.<sup>57-60</sup> The transporter
 
 
 
-<a id="Atenolol_CKD"></a>
+<a id="atenolol_ckd"></a>
 
 
 ### 3.3.2 Atenolol in a CKD Population
@@ -527,7 +546,7 @@ A population with Stage 4-5 CKD was created according to the demographic paramet
 A population with Stage 3-4 CKD was created according to the demographic parameters of the target population presented in the study of Wan 1979<sup>55</sup> (eGFR 15-42 mL/min/1.73m<sup>2</sup>). Simulation of the pharmacokinetics of atenolol after a single oral dose of 50 mg in this target population is presented in Figure **3-14**.
 
 
-![](images/003_section_undefined-section-3/010_section_undefined-section-10/012_section_Atenolol_CKD/7_time_profile_plot_Atenolol_Kirch_CKD3_100_mg_PO.png)
+![](images/003_section_compounds/010_section_atenolol/012_section_atenolol_ckd/7_time_profile_plot_Atenolol_Kirch_CKD3_100_mg_PO.png)
 
 
 
@@ -540,7 +559,7 @@ A population with Stage 3-4 CKD was created according to the demographic paramet
 <br>
 
 
-![](images/003_section_undefined-section-3/010_section_undefined-section-10/012_section_Atenolol_CKD/8_time_profile_plot_Atenolol_Kirch_CKD4_100_mg_PO.png)
+![](images/003_section_compounds/010_section_atenolol/012_section_atenolol_ckd/8_time_profile_plot_Atenolol_Kirch_CKD4_100_mg_PO.png)
 
 
 
@@ -553,7 +572,7 @@ A population with Stage 3-4 CKD was created according to the demographic paramet
 <br>
 
 
-![](images/003_section_undefined-section-3/010_section_undefined-section-10/012_section_Atenolol_CKD/9_time_profile_plot_Atenolol_Kirch_CKD5_100_mg_PO.png)
+![](images/003_section_compounds/010_section_atenolol/012_section_atenolol_ckd/9_time_profile_plot_Atenolol_Kirch_CKD5_100_mg_PO.png)
 
 
 
@@ -566,7 +585,7 @@ A population with Stage 3-4 CKD was created according to the demographic paramet
 <br>
 
 
-![](images/003_section_undefined-section-3/010_section_undefined-section-10/012_section_Atenolol_CKD/11_time_profile_plot_Atenolol_Sassard_CKD3_100_mg_PO.png)
+![](images/003_section_compounds/010_section_atenolol/012_section_atenolol_ckd/11_time_profile_plot_Atenolol_Sassard_CKD3_100_mg_PO.png)
 
 
 
@@ -579,7 +598,7 @@ A population with Stage 3-4 CKD was created according to the demographic paramet
 <br>
 
 
-![](images/003_section_undefined-section-3/010_section_undefined-section-10/012_section_Atenolol_CKD/12_time_profile_plot_Atenolol_Sassard_CKD4_100_mg_PO.png)
+![](images/003_section_compounds/010_section_atenolol/012_section_atenolol_ckd/12_time_profile_plot_Atenolol_Sassard_CKD4_100_mg_PO.png)
 
 
 
@@ -592,7 +611,7 @@ A population with Stage 3-4 CKD was created according to the demographic paramet
 <br>
 
 
-![](images/003_section_undefined-section-3/010_section_undefined-section-10/012_section_Atenolol_CKD/14_time_profile_plot_Atenolol_Wan_CKD4_50_mg_PO.png)
+![](images/003_section_compounds/010_section_atenolol/012_section_atenolol_ckd/14_time_profile_plot_Atenolol_Wan_CKD4_50_mg_PO.png)
 
 
 
@@ -608,7 +627,7 @@ A population with Stage 3-4 CKD was created according to the demographic paramet
 
 
 
-<a id="undefined-section-13"></a>
+<a id="conclusion"></a>
 
 
 # 4 Conclusion
@@ -622,7 +641,7 @@ The evaluation was performed for compounds with significant renal elimination, f
 
 
 
-<a id="undefined-section-14"></a>
+<a id="references"></a>
 
 
 # 5 References
