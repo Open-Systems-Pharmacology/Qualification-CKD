@@ -1,0 +1,168 @@
+{
+   "$schema": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/QualificationPlan/main/schemas/OSP_Qualification_Plan_Schema.json",
+   "Projects": [
+      {
+         "Id": "Gabapentin",
+         "Path": "Models/Gabapentin.json"
+      },
+      {
+         "Id": "Acebutolol",
+         "Path": "Models/Acebutolol.json"
+      },
+      {
+         "Id": "Atenolol",
+         "Path": "Models/Atenolol.json"
+      }
+   ],
+   "ObservedDataSets": [],
+   "Plots": {
+      "AxesSettings": {},
+      "PlotSettings": {},
+      "AllPlots": [
+         {
+            "Project": "Gabapentin",
+            "Simulation": "Blum Healthy 400 mg PO",
+            "SectionReference": "Gabapentin_Healthy"
+         },
+         {
+            "Project": "Gabapentin",
+            "Simulation": "Blum CKD3 400 mg PO",
+            "SectionReference": "Gabapentin_CKD"
+         },
+         {
+            "Project": "Gabapentin",
+            "Simulation": "Blum CKD5 400 mg PO",
+            "SectionReference": "Gabapentin_CKD"
+         },
+         {
+            "Project": "Acebutolol",
+            "Simulation": "Roux Healthy 200 mg PO",
+            "SectionReference": "Acebutolol_Healthy"
+         },
+         {
+            "Project": "Acebutolol",
+            "Simulation": "Roux CKD 200 mg PO",
+            "SectionReference": "Acebutolol_CKD"
+         },
+         {
+            "Project": "Atenolol",
+            "Simulation": "Kirch Healthy 100 mg PO",
+            "SectionReference": "Atenolol_Healthy"
+         },
+         {
+            "Project": "Atenolol",
+            "Simulation": "Kirch CKD3 100 mg PO",
+            "SectionReference": "Atenolol_CKD"
+         },
+         {
+            "Project": "Atenolol",
+            "Simulation": "Kirch CKD4 100 mg PO",
+            "SectionReference": "Atenolol_CKD"
+         },
+         {
+            "Project": "Atenolol",
+            "Simulation": "Kirch CKD5 100 mg PO",
+            "SectionReference": "Atenolol_CKD"
+         },
+         {
+            "Project": "Atenolol",
+            "Simulation": "Sassard Healthy 100 mg PO",
+            "SectionReference": "Atenolol_Healthy"
+         },
+         {
+            "Project": "Atenolol",
+            "Simulation": "Sassard CKD3 100 mg PO",
+            "SectionReference": "Atenolol_CKD"
+         },
+         {
+            "Project": "Atenolol",
+            "Simulation": "Sassard CKD4 100 mg PO",
+            "SectionReference": "Atenolol_CKD"
+         },
+         {
+            "Project": "Atenolol",
+            "Simulation": "Wan Healthy 50mg PO",
+            "SectionReference": "Atenolol_Healthy"
+         },
+         {
+            "Project": "Atenolol",
+            "Simulation": "Wan CKD4 50 mg PO",
+            "SectionReference": "Atenolol_CKD"
+         }
+      ]
+   },
+   "Inputs": [],
+   "Sections": [
+      {
+         "Title": "Introduction",
+         "Content": "Content/Section1_Introduction.md"
+      },
+      {
+         "Title": "CKD Population Development",
+         "Content": "Content/Section2_Model.md"
+      },
+      {
+         "Title": "Compounds",
+         "Content": "Content/Section3_Results_and_Discussion.md",
+         "Sections": [
+            {
+               "Title": "Gabapentin",
+               "Content": "Content/Gabapentin_Introduction.md",
+               "Sections": [
+                  {
+                     "Reference": "Gabapentin_Healthy",
+                     "Title": "Gabapentin in a Healthy Population",
+                     "Content": "Content/Gabapentin_healthy.md"
+                  },
+                  {
+                     "Reference": "Gabapentin_CKD",
+                     "Title": "Gabapentin in a CKD Population",
+                     "Content": "Content/Gabapentin_CKD.md"
+                  }
+               ]
+            },
+            {
+               "Title": "Acebutolol",
+               "Content": "Content/Acebutolol_Introduction.md",
+               "Sections": [
+                  {
+                     "Reference": "Acebutolol_Healthy",
+                     "Title": "Acebutolol in a Healthy Population",
+                     "Content": "Content/Acebutolol_healthy.md"
+                     
+                  },
+                  {
+                     "Reference": "Acebutolol_CKD",
+                     "Title": "Acebutolol in a CKD Population",
+                     "Content": "Content/Acebutolol_CKD.md"
+                  }
+               ]
+            },
+            {
+               "Title": "Atenolol",
+               "Content": "Content/Atenolol_Introduction.md",
+               "Sections": [
+                  {
+                     "Reference": "Atenolol_Healthy",
+                     "Title": "Atenolol in a Healthy Population",
+                     "Content": "Content/Atenolol_healthy.md"
+                  },
+                  {
+                     "Reference": "Atenolol_CKD",
+                     "Title": "Atenolol in a CKD Population",
+                     "Content": "Content/Atenolol_CKD.md"
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "Title": "Conclusion",
+         "Content": "Content/Section4_Conclusion.md"
+      },
+      {
+         "Title": "References",
+         "Content": "Content/References.md"
+      }
+   ]
+}
