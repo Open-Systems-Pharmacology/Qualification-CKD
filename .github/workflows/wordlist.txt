@@ -12,3 +12,7 @@ Ren
 situ
 SLC
 tid
+acebutolol’s 
+atenolol’s 
+pindolol’s 
+sotalol’s 
