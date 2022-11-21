@@ -2,8 +2,6 @@ name: CrossRefCheck with Anchors
 
 on: 
   push:
-    branches:
-      - review
 
 jobs:
   crossref-check-with-anchors:
