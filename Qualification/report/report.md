@@ -9,7 +9,7 @@
 | Version                                         | 1.0-OSP11.0                                                   |
 | ----------------------------------------------- | ------------------------------------------------------------ |
 | OSP Version                                     | 11.0                                                          |
-| Qualification Framework Version                 | 2.0                                                          |
+| Qualification Framework Version                 | 3.0                                                          |
 
 
 
@@ -66,11 +66,11 @@ This report replicates in part the evaluation of the parameterization done by Ma
 
 In order to generate a virtual population of subjects with CKD, the user must specify a target range for glomerular filtration rate (GFR) (minimum to maximum). PK-Sim will first generate a healthy population using the standard algorithm<sup>2</sup> - including the effects of aging as appropriate - and modify the physiological parameters of the simulated individuals to replicate a realistic CKD phenotype. The details of this process are outlined in **Figure 2-2**, with references to **Figure 2-1**, **Table 2-1** and **Table 2-2**. For a complete description, see Malik et al.<sup>1</sup>
 
-|![test image](images/fig1(paper).PNG)|
+|![test image](images/fig1_paper.png)|
 |:-:|
 |       *Figure 2-1: Simulated kidney volumes (left) and simulated renal cortex perfusion rates (right) in a population of adults aged 30-70 years with varying degrees of renal impairment compared with observed data from the literature.<sup>3-8</sup> Diamonds represent individual data, whereas error bars represent the range in a study. In order to assign realistic physiological parameters to virtual individuals, quadratic equations for kidney volume and renal cortex perfusion rates were optimized to log-transformed data.*         |
 
-|![test image](images/fig2(paper).PNG)|
+|![test image](images/fig2_paper.png)|
 |:-:|
 |       *Figure 2-2: Algorithm for generation of virtual individuals with CKD while accounting for the effects of aging*         |
 
