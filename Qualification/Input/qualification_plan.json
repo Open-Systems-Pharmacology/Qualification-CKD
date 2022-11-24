@@ -94,7 +94,7 @@
    "Inputs": [],
    "Sections": [
       {
-         "Title": "introduction",
+         "Title": "Introduction",
          "Reference": "Introduction",
          "Content": "Content/Section1_Introduction.md"
       },
@@ -104,12 +104,12 @@
          "Content": "Content/Section2_Model.md"
       },
       {
-         "Reference": "compounds",
+         "Reference": "Compounds",
          "Title": "Compounds",
          "Content": "Content/Section3_Results_and_Discussion.md",
          "Sections": [
             {
-               "Reference": "gabapentin",
+               "Reference": "Gabapentin",
                "Title": "Gabapentin",
                "Content": "Content/Gabapentin_Introduction.md",
                "Sections": [
@@ -126,7 +126,7 @@
                ]
             },
             {
-               "Reference": "acebutolol",
+               "Reference": "Acebutolol",
                "Title": "Acebutolol",
                "Content": "Content/Acebutolol_Introduction.md",
                "Sections": [
@@ -143,7 +143,7 @@
                ]
             },
             {
-               "Reference": "atenolol",
+               "Reference": "Atenolol",
                "Title": "Atenolol",
                "Content": "Content/Atenolol_Introduction.md",
                "Sections": [
