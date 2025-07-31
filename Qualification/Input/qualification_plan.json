@@ -16,8 +16,115 @@
    ],
    "ObservedDataSets": [],
    "Plots": {
-      "AxesSettings": {},
-      "PlotSettings": {},
+      "PlotSettings": {
+         "ChartWidth": 500,
+         "ChartHeight": 400,
+         "Fonts": {
+            "AxisSize": 11,
+            "LegendSize": 9,
+            "OriginSize": 9,
+            "FontFamilyName": "Arial",
+            "WatermarkSize": 40
+         }
+      },
+      "AxesSettings": {
+         "ComparisonTimeProfile": [
+            {
+               "Unit": "h",
+               "Dimension": "Time",
+               "Type": "X",
+               "GridLines": false,
+               "Scaling": "Linear"
+            },
+            {
+               "Unit": "µg/l",
+               "Dimension": "Concentration (mass)",
+               "Type": "Y",
+               "GridLines": false,
+               "Scaling": "Log"
+            }
+         ],
+         "DDIRatioPlotsPredictedVsObserved": [
+            {
+               "Unit": "",
+               "Dimension": "Dimensionless",
+               "Type": "X",
+               "GridLines": false,
+               "Scaling": "Log"
+            },
+            {
+               "Unit": "",
+               "Dimension": "Dimensionless",
+               "Type": "Y",
+               "GridLines": false,
+               "Scaling": "Log"
+            }
+         ],
+         "DDIRatioPlotsResidualsVsObserved": [
+            {
+               "Unit": "",
+               "Dimension": "Dimensionless",
+               "Type": "X",
+               "GridLines": false,
+               "Scaling": "Log"
+            },
+            {
+               "Unit": "",
+               "Dimension": "Dimensionless",
+               "Type": "Y",
+               "GridLines": false,
+               "Scaling": "Linear"
+            }
+         ],
+         "GOFMergedPlotsPredictedVsObserved": [
+            {
+               "Unit": "µg/l",
+               "Dimension": "Concentration (mass)",
+               "Type": "X",
+               "GridLines": false,
+               "Scaling": "Log"
+            },
+            {
+               "Unit": "µg/l",
+               "Dimension": "Concentration (mass)",
+               "Type": "Y",
+               "GridLines": false,
+               "Scaling": "Log"
+            }
+         ],
+         "GOFMergedPlotsResidualsOverTime": [
+            {
+               "Unit": "h",
+               "Dimension": "Time",
+               "Type": "X",
+               "GridLines": false,
+               "Scaling": "Linear"
+            },
+            {
+               "Unit": "",
+               "Dimension": "Dimensionless",
+               "Type": "Y",
+               "GridLines": false,
+               "Scaling": "Linear"
+            }
+         ],
+         "PKRatioPlots": [
+            {
+               "Unit": "year(s)",
+               "Dimension": "Age",
+               "Type": "X",
+               "GridLines": false,
+               "Scaling": "Log"
+            },
+            {
+               "Unit": "",
+               "Dimension": "Dimensionless",
+               "Type": "Y",
+               "GridLines": false,
+               "Scaling": "Log"
+            }
+         ]
+      },
       "AllPlots": [
          {
             "Project": "Gabapentin",
